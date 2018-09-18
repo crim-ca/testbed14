@@ -40,12 +40,6 @@
                 {
                     "id": "output_type",
                     "title": "Type of Workflow SFS Image",
-                    "formats": [
-                        {
-                            "mimeType": "text/plain",
-                            "default": true
-                        }
-                    ],
                     "minOccurs": 1,
                     "maxOccurs": 1,
                     "LiteralDataDomain": {
@@ -55,12 +49,6 @@
                 {
                     "id": "output_name",
                     "title": "Name of the Output Image",
-                    "formats": [
-                        {
-                            "mimeType": "text/plain",
-                            "default": true
-                        }
-                    ],
                     "minOccurs": 1,
                     "maxOccurs": 1,
                     "LiteralDataDomain": {

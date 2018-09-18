@@ -18,8 +18,9 @@ cwl-runner requires two files to execute an application :
 * The process workflow (e.g. Stacker : https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl)
 * The parameters file which contains values for each of the workflow inputs (e.g. https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-zip.job)
 
-The StackCreation-graph-json-zip.job contains the parameters value which include input image files. Currently we are using local path but cwl-runner should be able to fetch images directly.
-File samples referenced in the parameters json files can be downloaded using the links provided in the execute request payload : https://raw.githubusercontent.com/crim-ca/testbed14/workflow_offering/application-packages/Execute_Stacker.json
+The StackCreation-graph-json-zip.job contains the parameters values which include input image files. 
+Currently we are using local path but cwl-runner should be able to fetch images directly if hosted on a proper file server. 
+For your conveniance we have included links to samples images in the execute request payload (https://raw.githubusercontent.com/crim-ca/testbed14/workflow_offering/application-packages/Execute_Stacker.json), but the links doesn't include the extension and cwl-runner cannot fetch the files directly from there.
 
 To execute the process:
 

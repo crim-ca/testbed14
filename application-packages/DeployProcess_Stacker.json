@@ -5,14 +5,6 @@
             "title": "Stacker",
             "abstract": "",
             "keywords": [],
-            "owsContext": {
-                "offering": {
-                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
-                    "content": {
-                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
-                    }
-                }
-            },
             "inputs": [
                 {
                     "id": "files",
@@ -40,12 +32,6 @@
                 {
                     "id": "output_file_type",
                     "title": "Type of Stacked Image",
-                    "formats": [
-                        {
-                            "mimeType": "text/plain",
-                            "default": true
-                        }
-                    ],
                     "minOccurs": 1,
                     "maxOccurs": 1,
                     "LiteralDataDomain": {
@@ -55,12 +41,6 @@
                 {
                     "id": "output_name",
                     "title": "Name of the Produced Image",
-                    "formats": [
-                        {
-                            "mimeType": "text/plain",
-                            "default": true
-                        }
-                    ],
                     "minOccurs": 1,
                     "maxOccurs": 1,
                     "LiteralDataDomain": {
@@ -90,9 +70,9 @@
         }
     },
     "deploymentProfile": {
-        "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication",
+        "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
         "executionUnit": {
-            "reference": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.1"
+            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
         }
     }
 }
