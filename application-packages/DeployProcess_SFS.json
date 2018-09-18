@@ -1,37 +1,26 @@
 {
     "processOffering": {
         "process": {
-            "id": "StackCreation-graph-json-remote",
-            "title": "Stacker",
+            "id": "SFS-graph-json-remote",
+            "title": "SFS",
             "abstract": "",
             "keywords": [],
             "inputs": [
                 {
-                    "id": "files",
-                    "title": "Input Image",
+                    "id": "source_product",
+                    "title": "Source Product",
                     "formats": [
                         {
-                            "mimeType": "application/zip",
+                            "mimeType": "application/octet-stream",
                             "default": true
                         }
                     ],
                     "minOccurs": 1,
-                    "maxOccurs": "unbounded",
-                    "additionalParameters": [
-                        {
-                            "role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
-                            "parameters": [
-                                {
-                                    "name": "EOImage",
-                                    "value": "true"
-                                }
-                            ]
-                        }
-                    ]
+                    "maxOccurs": 1
                 },
                 {
                     "id": "output_file_type",
-                    "title": "Type of Stacked Image",
+                    "title": "Type of SFS Image",
                     "minOccurs": 1,
                     "maxOccurs": 1,
                     "LiteralDataDomain": {
@@ -51,7 +40,7 @@
             "outputs": [
                 {
                     "id": "output",
-                    "title": "Stacked Image",
+                    "title": "SFS Image",
                     "formats": [
                         {
                             "mimeType": "application/octet-stream",
@@ -72,7 +61,7 @@
     "deploymentProfile": {
         "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
         "executionUnit": {
-            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
+            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/SFS-graph-json-remote.cwl"
         }
     }
 }
