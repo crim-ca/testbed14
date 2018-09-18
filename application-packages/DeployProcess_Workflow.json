@@ -1,21 +1,21 @@
 {
     "processOffering": {
         "process": {
-            "id": "StackCreation-graph-json-remote",
-            "title": "Stacker",
+            "id": "Workflow",
+            "title": "Workflow",
             "abstract": "",
             "keywords": [],
             "owsContext": {
                 "offering": {
                     "code": "http://www.opengis.net/eoc/applicationContext/cwl",
                     "content": {
-                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
                     }
                 }
             },
             "inputs": [
                 {
-                    "id": "files",
+                    "id": "input_files",
                     "title": "Input Image",
                     "formats": [
                         {
@@ -38,8 +38,8 @@
                     ]
                 },
                 {
-                    "id": "output_file_type",
-                    "title": "Type of Stacked Image",
+                    "id": "output_type",
+                    "title": "Type of Workflow SFS Image",
                     "formats": [
                         {
                             "mimeType": "text/plain",
@@ -54,7 +54,7 @@
                 },
                 {
                     "id": "output_name",
-                    "title": "Name of the Produced Image",
+                    "title": "Name of the Output Image",
                     "formats": [
                         {
                             "mimeType": "text/plain",
@@ -71,7 +71,7 @@
             "outputs": [
                 {
                     "id": "output",
-                    "title": "Stacked Image",
+                    "title": "Workflow SFS Image",
                     "formats": [
                         {
                             "mimeType": "application/octet-stream",
@@ -90,9 +90,9 @@
         }
     },
     "deploymentProfile": {
-        "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication",
+        "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
         "executionUnit": {
-            "reference": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.1"
+            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
         }
     }
 }
