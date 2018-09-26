@@ -5,6 +5,14 @@
             "title": "Stacker",
             "abstract": "",
             "keywords": [],
+			"owsContext": {
+                "offering": {
+                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
+                    }
+                }
+            },
             "inputs": [
                 {
                     "id": "files",
@@ -69,10 +77,10 @@
             ]
         }
     },
-    "deploymentProfile": {
-        "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
-        "executionUnit": {
-            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
+	"executionUnit": [
+	    {
+            "href": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.1"
         }
-    }
+	],
+    "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
 }
