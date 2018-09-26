@@ -1,0 +1,68 @@
+{
+    "processOffering": {
+        "process": {
+            "id": "Fetcher",
+            "title": "Fetcher",
+            "abstract": "",
+            "keywords": [],
+			"owsContext": {
+                "offering": {
+                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Fetcher.cwl"
+                    }
+                }
+            },
+            "inputs": [
+                {
+                    "id": "input",
+                    "title": "Input Images",
+                    "formats": [
+                        {
+                            "mimeType": "application/zip",
+                            "default": true
+                        }
+                    ],
+                    "minOccurs": 1,
+                    "maxOccurs": "unbounded",
+                    "additionalParameters": [
+                        {
+                            "role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
+                            "parameters": [
+                                {
+                                    "name": "EOImage",
+                                    "value": "true"
+                                }
+                            ]
+                        }
+                    ]
+                }          
+            ],
+            "outputs": [
+                {
+                    "id": "output",
+                    "title": "Output Images",
+                    "formats": [
+                        {
+                            "mimeType": "application/zip",
+                            "default": true
+                        }
+                    ]
+                }
+            ],
+            "version": "1.0.0",
+            "jobControlOptions": [
+                "async-execute"
+            ],
+            "outputTransmission": [
+                "reference"
+            ]
+        }
+    },
+	"executionUnit": [
+	    {
+            "href": "docker-registry.crim.ca/ogc-public/fetcher:v1"
+        }
+	],
+    "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
+}
