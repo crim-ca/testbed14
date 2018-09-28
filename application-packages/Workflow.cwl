@@ -7,9 +7,9 @@
         }
     ],
     "inputs": {
-        "input_files": "File[]",
-        "output_type": "string",
-        "output_name": "string"
+        "image-s2": "File[]",
+        "image-probav" : "File[]",
+        "image-deimos" : "File[]"
     },
     "outputs": {
         "classout": {
@@ -18,23 +18,42 @@
         }
     },
     "steps": {
-        "stack_creation": {
-            "run": "StackCreation-graph-json-remote.cwl",
+        "stacker_s2": {
+            "run": "Stacker.cwl",
             "in": {
-                "files": "input_files",
-                "output_file_type": "output_type",
-                "output_name": {
-                    "valueFrom": "stack_result.tif"
-                }
+                "files": "image-s2"
+            },
+            "out": ["output"]
+        },
+        "stacker_probav": {
+            "run": "Stacker.cwl",
+            "in": {
+                "files": "image-probav"
+            },
+            "out": ["output"]
+        },
+        "stacker_deimos": {
+           "run": "Stacker.cwl",
+           "in": {
+                "files": "image-deimos"
+            },
+            "out": ["output"]
+        },
+        "stack_creation": {
+            "run": "Stacker.cwl",
+            "in": {
+                "files": [
+                    "stacker_s2/output",
+                    "stacker_probav/output",
+                    "stacker_deimos/output"
+                ]
             },
             "out": ["output"]
         },
         "sfs": {
-            "run": "SFS-graph-json-remote.cwl",
+            "run": "SFS.cwl",
             "in": {
-                "source_product": "stack_creation/output",
-                "output_file_type": "output_type",
-                "output_name": "output_name"
+                "source_product": "stack_creation/output"
             },
             "out": ["output"]
         }

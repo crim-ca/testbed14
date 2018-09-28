@@ -3,9 +3,10 @@
     "class": "CommandLineTool",
     "requirements": {
         "DockerRequirement": {
-            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.1"
+            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.2"
         }
     },
+    "arguments": ["-f", "BEAM-DIMAP", "-t", "stacker_output.dim"],
     "inputs": {
         "files": {
             "inputBinding": {
@@ -18,26 +19,12 @@
                 "type": "array",
                 "items": "File"
             }
-        },
-        "output_file_type": {
-            "inputBinding": {
-                "position": 2,
-                "prefix": "-f"
-            },
-            "type": "string"
-        },
-        "output_name": {
-            "inputBinding": {
-                "position": 3,
-                "prefix": "-t"
-            },
-            "type": "string"
         }
     },
     "outputs": {
         "output": {
             "outputBinding": {
-                "glob": "$(inputs.output_name)"
+                "glob": "stacker_output.dim.zip"
             },
             "type": "File"
         }
