@@ -4,6 +4,9 @@
     "requirements": [
         {
             "class": "StepInputExpressionRequirement"
+        },
+        {
+            "class": "MultipleInputFeatureRequirement"
         }
     ],
     "inputs": {
