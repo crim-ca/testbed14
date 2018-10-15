@@ -1,7 +1,7 @@
 {
     "processOffering": {
         "process": {
-            "id": "SFS-graph-json-remote",
+            "id": "SFS",
             "title": "SFS",
             "abstract": "",
             "keywords": [],
@@ -17,25 +17,7 @@
                     ],
                     "minOccurs": 1,
                     "maxOccurs": 1
-                },
-                {
-                    "id": "output_file_type",
-                    "title": "Type of SFS Image",
-                    "minOccurs": 1,
-                    "maxOccurs": 1,
-                    "LiteralDataDomain": {
-                        "dataType": "String"
-                    }
-                },
-                {
-                    "id": "output_name",
-                    "title": "Name of the Produced Image",
-                    "minOccurs": 1,
-                    "maxOccurs": 1,
-                    "LiteralDataDomain": {
-                        "dataType": "String"
-                    }
-                }          
+                }
             ],
             "outputs": [
                 {
@@ -61,7 +43,7 @@
     "deploymentProfile": {
         "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
         "executionUnit": {
-            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/SFS-graph-json-remote.cwl"
+            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/SFS/SFS.cwl"
         }
     }
 }

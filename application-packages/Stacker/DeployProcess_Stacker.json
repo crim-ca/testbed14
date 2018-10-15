@@ -1,7 +1,7 @@
 {
     "processOffering": {
         "process": {
-            "id": "StackCreation-graph-json-remote",
+            "id": "Stacker",
             "title": "Stacker",
             "abstract": "",
             "keywords": [],
@@ -72,7 +72,7 @@
     "deploymentProfile": {
         "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
         "executionUnit": {
-            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/StackCreation-graph-json-remote.cwl"
+            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Stacker/Stacker.cwl"
         }
     }
 }

@@ -9,7 +9,7 @@
                 "offering": {
                     "code": "http://www.opengis.net/eoc/applicationContext/cwl",
                     "content": {
-                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow/Workflow.cwl"
                     }
                 }
             },
@@ -36,25 +36,7 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "output_type",
-                    "title": "Type of Workflow SFS Image",
-                    "minOccurs": 1,
-                    "maxOccurs": 1,
-                    "LiteralDataDomain": {
-                        "dataType": "String"
-                    }
-                },
-                {
-                    "id": "output_name",
-                    "title": "Name of the Output Image",
-                    "minOccurs": 1,
-                    "maxOccurs": 1,
-                    "LiteralDataDomain": {
-                        "dataType": "String"
-                    }
-                }          
+                }
             ],
             "outputs": [
                 {
@@ -80,7 +62,7 @@
     "deploymentProfile": {
         "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
         "executionUnit": {
-            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
+            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow/Workflow.cwl"
         }
     }
 }

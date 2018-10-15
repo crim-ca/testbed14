@@ -11,14 +11,6 @@
     {
       "id": "files",
       "reference": "https://crimrd-my.sharepoint.com/:u:/g/personal/byrnsda_crim_ca/EZkIe6yR7NVIoUu6A6PDWhABnywBYvRlW-xkYseD5mFlgA?download=1"
-    },
-    {
-      "id": "output_type",
-      "value": "GeoTIFF"
-    },
-    {
-      "id": "output_name",
-      "value": "workflow_result.tif"
     }
   ],
   "outputs": [

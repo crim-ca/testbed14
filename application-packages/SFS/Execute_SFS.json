@@ -3,14 +3,6 @@
     {
       "id": "source_product",
       "reference": "<output of Stacker application>"
-    },
-    {
-      "id": "output_file_type",
-      "value": "GeoTIFF"
-    },
-    {
-      "id": "output_name",
-      "value": "sfs_result.tif"
     }
   ],
   "outputs": [
