@@ -3,9 +3,10 @@
     "class": "CommandLineTool",
     "hints": {
         "DockerRequirement": {
-            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.1"
+            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.2"
         }
     },
+    "arguments": ["-f", "BEAM-DIMAP", "-t", "sfs_output.dim"],
     "inputs": {
         "source_product": {
             "inputBinding": {
@@ -14,26 +15,12 @@
                 "separate": false
             },
             "type": "File"
-        },
-        "output_file_type": {
-            "inputBinding": {
-                "position": 2,
-                "prefix": "-f"
-            },
-            "type": "string"
-        },
-        "output_name": {
-            "inputBinding": {
-                "position": 3,
-                "prefix": "-t"
-            },
-            "type": "string"
         }
     },
     "outputs": {
         "output": {
             "outputBinding": {
-                "glob": "$(inputs.output_name)"
+                "glob": "sfs_output.dim.zip"
             },
             "type": "File"
         }

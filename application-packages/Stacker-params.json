@@ -12,7 +12,5 @@
             "location": "./RS2_OK18072_PK188251_DK178156_F22_20090501_110525_HH_HV_SLC.zip",
             "class": "File"
         }
-    ],
-    "output_file_type": "GeoTIFF",
-    "output_name": "stack_result.tif"
+    ]
 }
