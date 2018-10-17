@@ -5,14 +5,6 @@
             "title": "Workflow",
             "abstract": "",
             "keywords": [],
-            "owsContext": {
-                "offering": {
-                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
-                    "content": {
-                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow/Workflow.cwl"
-                    }
-                }
-            },
             "inputs": [
                 {
                     "id": "input_files",
@@ -59,10 +51,10 @@
             ]
         }
     },
-    "deploymentProfile": {
-        "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow",
-        "executionUnit": {
-            "reference": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow/Workflow.cwl"
+	"executionUnit": [
+	    {
+            "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
         }
-    }
+	],
+    "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow"
 }
