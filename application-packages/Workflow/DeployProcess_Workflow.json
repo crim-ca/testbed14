@@ -1,5 +1,5 @@
 {
-    "processOffering": {
+    "processDescription": {
         "process": {
             "id": "Workflow",
             "title": "Workflow",
@@ -23,7 +23,9 @@
                             "parameters": [
                                 {
                                     "name": "EOImage",
-                                    "value": "true"
+                                    "values": [
+                                        "true"
+                                    ]
                                 }
                             ]
                         }
@@ -41,20 +43,20 @@
                         }
                     ]
                 }
-            ],
-            "version": "1.0.0",
-            "jobControlOptions": [
-                "async-execute"
-            ],
-            "outputTransmission": [
-                "reference"
             ]
-        }
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
     },
-	"executionUnit": [
-	    {
+    "executionUnit": [
+        {
             "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
         }
-	],
+    ],
     "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow"
 }

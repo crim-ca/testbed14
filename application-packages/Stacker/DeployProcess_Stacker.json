@@ -1,11 +1,11 @@
 {
-    "processOffering": {
+    "processDescription": {
         "process": {
             "id": "Stacker",
             "title": "Stacker",
             "abstract": "",
             "keywords": [],
-			"owsContext": {
+            "owsContext": {
                 "offering": {
                     "code": "http://www.opengis.net/eoc/applicationContext/cwl",
                     "content": {
@@ -31,7 +31,9 @@
                             "parameters": [
                                 {
                                     "name": "EOImage",
-                                    "value": "true"
+                                    "values": [
+                                        "true"
+                                    ]
                                 }
                             ]
                         }
@@ -49,20 +51,20 @@
                         }
                     ]
                 }
-            ],
-            "version": "1.0.0",
-            "jobControlOptions": [
-                "async-execute"
-            ],
-            "outputTransmission": [
-                "reference"
             ]
-        }
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
     },
-	"executionUnit": [
-	    {
+    "executionUnit": [
+        {
             "href": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.4"
         }
-	],
+    ],
     "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
 }

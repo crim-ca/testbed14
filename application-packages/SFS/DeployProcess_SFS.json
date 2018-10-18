@@ -1,11 +1,11 @@
 {
-    "processOffering": {
+    "processDescription": {
         "process": {
             "id": "SFS",
             "title": "SFS",
             "abstract": "",
             "keywords": [],
-			"owsContext": {
+            "owsContext": {
                 "offering": {
                     "code": "http://www.opengis.net/eoc/applicationContext/cwl",
                     "content": {
@@ -38,20 +38,20 @@
                         }
                     ]
                 }
-            ],
-            "version": "1.0.0",
-            "jobControlOptions": [
-                "async-execute"
-            ],
-            "outputTransmission": [
-                "reference"
             ]
-        }
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
     },
-	"executionUnit": [
-	    {
+    "executionUnit": [
+        {
             "href": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.4"
         }
-	],
+    ],
     "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
 }
