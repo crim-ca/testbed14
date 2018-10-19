@@ -55,7 +55,7 @@
     },
     "executionUnit": [
         {
-            "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow.cwl"
+            "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow/Workflow.cwl"
         }
     ],
     "deploymentProfileName": "http://www.opengis.net/profiles/eoc/workflow"
