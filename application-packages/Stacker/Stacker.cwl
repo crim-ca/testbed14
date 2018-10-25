@@ -3,7 +3,7 @@
     "class": "CommandLineTool",
     "requirements": {
         "DockerRequirement": {
-            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.4"
+            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.5"
         }
     },
     "arguments": ["-f", "BEAM-DIMAP", "-t", "stacker_output.dim"],
