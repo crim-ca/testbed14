@@ -1,14 +1,16 @@
 {
+  "mode": "async",
+  "response": "document",
   "inputs": [
     {
       "id": "source_product",
-      "reference": "<output of Stacker application>"
+      "href": "<output of Stacker application>"
     }
   ],
   "outputs": [
     {
       "id": "output",
-      "transmissionMode": "REFERENCE"
+      "transmissionMode": "reference"
     }
   ]
 }
