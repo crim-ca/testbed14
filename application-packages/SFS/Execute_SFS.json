@@ -1,14 +1,16 @@
 {
+  "mode": "async",
+  "response": "document",
   "inputs": [
     {
       "id": "source_product",
-      "reference": "<output of Stacker application>"
+      "href": "https://ogc-ems.crim.ca/twitcher/wpsoutputs/stacker_output.dim.zip"
     }
   ],
   "outputs": [
     {
       "id": "output",
-      "transmissionMode": "REFERENCE"
+      "transmissionMode": "reference"
     }
   ]
 }
