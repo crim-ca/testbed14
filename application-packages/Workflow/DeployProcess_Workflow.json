@@ -38,7 +38,7 @@
                     "title": "Workflow SFS Image",
                     "formats": [
                         {
-                            "mimeType": "application/octet-stream",
+                            "mimeType": "application/zip",
                             "default": true
                         }
                     ]

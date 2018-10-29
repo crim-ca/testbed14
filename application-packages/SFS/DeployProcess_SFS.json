@@ -19,7 +19,7 @@
                     "title": "Source Product",
                     "formats": [
                         {
-                            "mimeType": "application/octet-stream",
+                            "mimeType": "application/zip",
                             "default": true
                         }
                     ],
@@ -33,7 +33,7 @@
                     "title": "SFS Image",
                     "formats": [
                         {
-                            "mimeType": "application/octet-stream",
+                            "mimeType": "application/zip",
                             "default": true
                         }
                     ]
