@@ -4,7 +4,7 @@
   "inputs": [
     {
       "id": "source_product",
-      "href": "<output of Stacker application>"
+      "href": "https://ogc-ems.crim.ca/twitcher/wpsoutputs/stacker_output.dim.zip"
     }
   ],
   "outputs": [
