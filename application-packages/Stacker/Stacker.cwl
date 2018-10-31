@@ -3,10 +3,9 @@
     "class": "CommandLineTool",
     "requirements": {
         "DockerRequirement": {
-            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.5"
+            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.6"
         }
     },
-    "arguments": ["-f", "BEAM-DIMAP", "-t", "stacker_output.dim"],
     "inputs": {
         "files": {
             "inputBinding": {
@@ -24,7 +23,7 @@
     "outputs": {
         "output": {
             "outputBinding": {
-                "glob": "stacker_output.dim.zip"
+                "glob": "output.dim.zip"
             },
             "type": "File"
         }
