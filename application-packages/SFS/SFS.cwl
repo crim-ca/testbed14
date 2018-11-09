@@ -3,7 +3,7 @@
     "class": "CommandLineTool",
     "hints": {
         "DockerRequirement": {
-            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.7"
+            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.8"
         }
     },
     "arguments": ["-f", "BEAM-DIMAP", "-t", "sfs_output.dim"],
