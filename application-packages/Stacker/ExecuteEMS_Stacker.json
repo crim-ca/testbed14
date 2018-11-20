@@ -1,0 +1,28 @@
+{
+  "mode": "async",
+  "response": "document",
+  "inputs": [
+    {
+      "id": "StartDate",
+      "data": "2018-01-30T00:00:00.000Z"
+    },
+    {
+      "id": "EndDate",
+      "data": "2018-01-31T23:59:59.999Z"
+    },
+    {
+      "id": "aoi",
+      "data": "POLYGON((100.4 15.3,104.6 15.3,104.6 19.3,100.4 19.3,100.4 15.3))"
+    },
+    {
+      "id": "collection",
+      "data": "EOP:IPT:Sentinel2"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "output",
+      "transmissionMode": "reference"
+    }
+  ]
+}
