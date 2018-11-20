@@ -1,0 +1,57 @@
+{
+    "processDescription": {
+        "process": {
+            "id": "Stacker",
+            "title": "Stacker",
+            "abstract": "",
+            "keywords": [],
+            "owsContext": {
+                "offering": {
+                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Stacker/Stacker.cwl"
+                    }
+                }
+            },
+            "inputs": [
+                {
+                    "id": "files",
+                    "title": "Input Image",
+                    "formats": [
+                        {
+                            "mimeType": "application/zip",
+                            "default": true
+                        }
+                    ],
+                    "minOccurs": 1,
+                    "maxOccurs": "unbounded"
+                }
+            ],
+            "outputs": [
+                {
+                    "id": "output",
+                    "title": "Stacked Image",
+                    "formats": [
+                        {
+                            "mimeType": "application/zip",
+                            "default": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
+    },
+    "executionUnit": [
+        {
+            "href": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.8"
+        }
+    ],
+    "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
+}
