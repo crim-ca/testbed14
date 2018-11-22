@@ -24,7 +24,7 @@
                         }
                     ],
                     "minOccurs": "1",
-                    "maxOccurs": "2",
+                    "maxOccurs": "unbounded",
                     "additionalParameters": [
                         {
                             "role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
