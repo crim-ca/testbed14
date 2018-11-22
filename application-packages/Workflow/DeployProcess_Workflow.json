@@ -5,6 +5,14 @@
             "title": "Workflow",
             "abstract": "",
             "keywords": [],
+            "owsContext": {
+                "offering": {
+                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/Workflow/Workflow.cwl"
+                    }
+                }
+            },
             "inputs": [
                 {
                     "id": "input_files",
