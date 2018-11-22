@@ -3,7 +3,7 @@
     "class": "CommandLineTool",
     "requirements": {
         "DockerRequirement": {
-            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.8"
+            "dockerPull": "docker-registry.crim.ca/ogc-public/snap6-stack-creation:v2.9"
         }
     },
     "inputs": {
