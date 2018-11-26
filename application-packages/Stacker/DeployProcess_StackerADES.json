@@ -21,6 +21,15 @@
                         {
                             "mimeType": "application/zip",
                             "default": true
+                        },
+                        {
+                            "mimeType": "application/x-hdf"
+                        },
+                        {
+                            "mimeType": "application/x-binary"
+                        },
+                        {
+                            "mimeType": "image/tiff"
                         }
                     ],
                     "minOccurs": 1,
