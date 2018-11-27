@@ -12,8 +12,8 @@
 					"mimeType": "application/zip",
 					"default": true
 				}],
-				"minOccurs": 1,
-				"maxOccurs": "unbounded",
+				"minOccurs": "1",
+				"maxOccurs": "2",
 				"additionalParameters": [{
 					"role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
 					"parameters": [{
@@ -35,8 +35,8 @@
 				{
 					"mimeType": "application/x-binary"
 				}],
-				"minOccurs": 1,
-				"maxOccurs": "unbounded",
+				"minOccurs": "1",
+				"maxOccurs": "2",
 				"additionalParameters": [{
 					"role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
 					"parameters": [{
@@ -55,8 +55,8 @@
 				{
 					"mimeType": "image/tiff"
 				}],
-				"minOccurs": 1,
-				"maxOccurs": "unbounded",
+				"minOccurs": "1",
+				"maxOccurs": "2",
 				"additionalParameters": [{
 					"role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
 					"parameters": [{

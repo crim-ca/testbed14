@@ -3,16 +3,28 @@
   "response": "document",
   "inputs": [
     {
-      "id": "image-s2",
-      "href": "https://ogc-ems.crim.ca/twitcher/wpsoutputs/S1A_IW_GRDH_1SDV_20170413T224356_20170413T224421_016132_01AA52_90ED.SAFE.zip"
+      "id": "StartDate",
+      "data": "2016-09-03T23:00:00Z"
     },
     {
-      "id": "image-probav",
-      "href": "https://ogc-ems.crim.ca/twitcher/wpsoutputs/S2A_MSIL1C_20180610T154901_N0206_R054_T18TXR_20180610T193029.SAFE.zip"
+      "id": "EndDate",
+      "data": "2016-09-06T20:00:00Z"
     },
     {
-      "id": "image-deimos",
-      "href": "https://ogc-ems.crim.ca/twitcher/wpsoutputs/RS2_OK18072_PK188251_DK178156_F22_20090501_110525_HH_HV_SLC.zip"
+      "id": "aoi",
+      "data": "-95,29.8,-95.5,30"
+    },
+    {
+       "id": "image-s2_collection",
+      "data" :"EOP:IPT:Sentinel2"
+    },
+	{
+       "id": "image-probav_collection",
+      "data" :"EOP:VITO:PROBAV_P_V001"
+    },
+    {
+      "id": "image-deimos_collection",
+      "data": "EOP:IPT:DE2_MS4_L1B"
     }
   ],
   "outputs": [
