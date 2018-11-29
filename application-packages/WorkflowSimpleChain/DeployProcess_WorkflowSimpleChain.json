@@ -1,7 +1,7 @@
 {
 	"processDescription": {
 		"process": {
-			"id": "WorkflowSimpleChainingFromCRIM",
+			"id": "WorkflowSimpleChaining",
 			"title": "Workflow",
 			"abstract": "",
 			"keywords": [],
@@ -67,14 +67,14 @@
 			},
 			"steps": {
 				"stacker": {
-					"run": "StackerFromCRIM.cwl",
+					"run": "Stacker.cwl",
 					"in": {
 						"files": "input_files"
 					},
 					"out": ["output"]
 				},
 				"sfs": {
-					"run": "SFSFromCRIM.cwl",
+					"run": "SFS.cwl",
 					"in": {
 						"source_product": "stacker/output"
 					},
