@@ -1,0 +1,6 @@
+{
+    "source_product": {
+        "location": "./sfs_output.dim.zip",
+        "class": "File"
+    }
+}

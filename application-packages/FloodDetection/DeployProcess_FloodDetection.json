@@ -1,0 +1,57 @@
+{
+    "processDescription": {
+        "process": {
+            "id": "FloodDetection",
+            "title": "FloodDetection",
+            "abstract": "",
+            "keywords": [],
+            "owsContext": {
+                "offering": {
+                    "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/crim-ca/testbed14/master/application-packages/FloodDetection/FloodDetection.cwl"
+                    }
+                }
+            },
+            "inputs": [
+                {
+                    "id": "source_product",
+                    "title": "Source Product",
+                    "formats": [
+                        {
+                            "mimeType": "application/zip",
+                            "default": true
+                        }
+                    ],
+                    "minOccurs": 1,
+                    "maxOccurs": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "id": "output",
+                    "title": "FloodDetection Image",
+                    "formats": [
+                        {
+                            "mimeType": "application/zip",
+                            "default": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
+    },
+    "executionUnit": [
+        {
+            "href": "docker-registry.crim.ca/ogc-public/snap6-flood-detection:v2.11"
+        }
+    ],
+    "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
+}
