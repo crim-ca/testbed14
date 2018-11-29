@@ -15,11 +15,11 @@
       "data": "-95,29.8,-95.5,30"
     },
     {
-       "id": "image-s2_collection",
+      "id": "image-s2_collection",
       "data" :"EOP:IPT:Sentinel2"
     },
-	{
-       "id": "image-probav_collection",
+    {
+      "id": "image-probav_collection",
       "data" :"EOP:VITO:PROBAV_S1-TOA_1KM_V001"
     },
     {

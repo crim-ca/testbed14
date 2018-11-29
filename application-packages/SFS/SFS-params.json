@@ -1,6 +1,6 @@
 {
     "source_product": {
-        "location": "./stack_result.tif",
+        "location": "./stacker_output.dim.zip",
         "class": "File"
     }
 }
