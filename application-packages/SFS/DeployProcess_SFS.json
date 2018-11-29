@@ -50,7 +50,7 @@
     },
     "executionUnit": [
         {
-            "href": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.10"
+            "href": "docker-registry.crim.ca/ogc-public/snap6-sfs:v2.11"
         }
     ],
     "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
