@@ -32,7 +32,7 @@
                             "mimeType": "image/tiff"
                         }
                     ],
-                    "minOccurs": 1,
+                    "minOccurs": "1",
                     "maxOccurs": "unbounded"
                 }
             ],
@@ -51,7 +51,7 @@
         },
         "processVersion": "1.0.0",
         "jobControlOptions": [
-            "async-execute"
+            "async"
         ],
         "outputTransmission": [
             "reference"
