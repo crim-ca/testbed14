@@ -43,7 +43,7 @@
 			}]
 		},
 		"processVersion": "1.0.0",
-		"jobControlOptions": ["async"],
+		"jobControlOptions": ["async-execute"],
 		"outputTransmission": ["reference"]
 	},
 	"executionUnit": [{
