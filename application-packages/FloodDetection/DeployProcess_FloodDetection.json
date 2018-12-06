@@ -50,7 +50,7 @@
     },
     "executionUnit": [
         {
-            "href": "docker-registry.crim.ca/ogc-public/snap6-flood-detection:v2.11"
+            "href": "docker-registry.crim.ca/ogc-public/snap6-flood-detection:v2.12"
         }
     ],
     "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
