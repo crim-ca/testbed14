@@ -3,7 +3,7 @@
         "process": {
             "id": "SFS",
             "title": "SFS",
-            "abstract": "",
+            "abstract": "Application that processes Structural Feature Set operation on an image to extracts textual features.",
             "keywords": [],
             "owsContext": {
                 "offering": {

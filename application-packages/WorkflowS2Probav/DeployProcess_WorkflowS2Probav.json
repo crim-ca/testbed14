@@ -3,7 +3,7 @@
 		"process": {
 			"id": "WorkflowS2ProbaV",
 			"title": "Workflow",
-			"abstract": "",
+			"abstract": "Workflow that stacks images from Sentinel2 and ProbaV data sources from OpenSearch queries, then runs SFS on the stacked image.",
 			"keywords": [],
 			"inputs": [{
 				"id": "image-s2",
