@@ -1,7 +1,7 @@
 {
 	"processDescription": {
 		"process": {
-			"id": "WorkflowSimpleChaining",
+			"id": "WorkflowSimpleChain",
 			"title": "Workflow",
 			"abstract": "",
 			"keywords": [],
