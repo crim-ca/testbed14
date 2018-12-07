@@ -80,21 +80,21 @@
 			},
 			"steps": {
 				"stacker_s2": {
-					"run": "StackerFromCRIM.cwl",
+					"run": "Stacker.cwl",
 					"in": {
 						"files": "image-s2"
 					},
 					"out": ["output"]
 				},
 				"stacker_probav": {
-					"run": "StackerFromCRIM.cwl",
+					"run": "Stacker.cwl",
 					"in": {
 						"files": "image-probav"
 					},
 					"out": ["output"]
 				},
 				"stack_creation": {
-					"run": "StackerFromCRIM.cwl",
+					"run": "Stacker.cwl",
 					"in": {
 						"files": ["stacker_s2/output",
 						"stacker_probav/output"]
@@ -102,7 +102,7 @@
 					"out": ["output"]
 				},
 				"sfs": {
-					"run": "SFSFromCRIM.cwl",
+					"run": "SFS.cwl",
 					"in": {
 						"source_product": "stack_creation/output"
 					},
