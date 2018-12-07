@@ -3,7 +3,7 @@
 		"process": {
 			"id": "WorkflowSimpleChain",
 			"title": "Workflow",
-			"abstract": "",
+			"abstract": "Workflow that directly specifies the CWL operations in the execution unit.",
 			"keywords": [],
 			"inputs": [{
 				"id": "input_files",

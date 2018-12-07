@@ -3,7 +3,7 @@
         "process": {
             "id": "Stacker",
             "title": "Stacker",
-            "abstract": "",
+            "abstract": "Application that stacks multiple images of overlapping geo-locations directly referenced by hyperlink references.",
             "keywords": [],
             "owsContext": {
                 "offering": {
